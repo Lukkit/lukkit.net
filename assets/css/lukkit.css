@@ -6,14 +6,24 @@ html {
 	background-size: cover;
 }
 
-body {
-	background: rgba(0, 0, 0, 0.3);
-	padding: 2rem 0;
+.container {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
-html, body {
-	height: 100%;
+body {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+body {
+	min-height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
 }
 
 .head img {
@@ -58,7 +68,7 @@ html, body {
 }
 
 .card {
-	box-shadow: 0 0 50px rgba(84, 84, 84, 0.5);
+	box-shadow: 0 0 5px #000;
 }
 
 .head p {
