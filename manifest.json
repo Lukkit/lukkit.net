@@ -1,8 +1,11 @@
 {
   "name": "Lukkit",
+  "short_name": "Lukkit",
+  "start_url": ".",
+  "display": "minimal-ui",
+  "background_color": "#fff",
+  "description": "Open-source platform for creating Bukkit plugins using Lua.",
   "lang": "en-US",
-  "start_url": "/",
-  "display": "standalone",
   "icons": [
     {
       "src": "/assets/img/icons/apple-icon-57x57.png",
