@@ -1,3 +1,8 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} www.lukkit.net
+RewriteRule (.*) https://lukkit.net/$1 [R=301,L]
+
 Redirect 301 /discord https://discord.gg/mhsyabW
 Redirect 301 /github  https://github.com/artex-development/Lukkit
 Redirect 301 /youtube https://www.youtube.com/channel/UCZT_wYmWsDTsM3R_GjIRbhQ
