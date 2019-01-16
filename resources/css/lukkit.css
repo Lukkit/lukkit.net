@@ -46,11 +46,12 @@ body {
 	box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
 	border-radius: 3px;
 	transition: border 250ms ease;
+	margin-bottom: 5vh;
 }
 
-.card:hover {
-	border-color: rgba(84, 196, 64);
-	color: rgba(84, 196, 64);
+.card:hover, body.dark .card:hover {
+	border-color: rgb(84, 196, 64);
+	color: rgb(84, 196, 64);
 	cursor: pointer;
 }
 
@@ -97,7 +98,7 @@ body {
 	font-weight: 400;
 }
 
-.button:hover {
+.button:hover, body.dark .button:hover {
 	color: rgb(56, 132, 255);
 }
 
@@ -123,8 +124,48 @@ a:hover {
 	color: #9DAAB6;
 }
 
-@media screen and (max-width: 768px) {
-	.card {
-		margin-bottom: 5vh;
-	}
+.toggle {
+	margin: 5vh 0 10vh;
+	color: #242A31;
+	border: 1px solid #E6ECF1;
+	box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+	background: white;
+	border-radius: 40px;
+	height: 40px;
+	width: 40px;
+	padding: 8px;
+	font-size: 16px;
+	display: inline-block;
+	transition: all 250ms ease;
+}
+
+.toggle:hover, body.dark .toggle:hover {
+	border-color: rgb(56, 132, 255);
+	color: rgb(56, 132, 255);
+	cursor: pointer;
+}
+
+body.dark {
+	background: #16191f;
+}
+
+body.dark .navbar-toggler {
+	color: white;
+}
+
+body.dark .card p.card-text, body.dark .head p {
+	color: #9baec8;
+}
+
+body.dark .navbar, body.dark .card, body.dark .toggle {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+body.dark .navbar, body.dark .card, body.dark .button, body.dark .toggle {
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+body.dark .navbar-brand, body.dark .navbar-brand:hover, body.dark .card, body.dark .head h2, body.dark .button, body.dark .toggle {
+	color: #d9e1e8;
 }
