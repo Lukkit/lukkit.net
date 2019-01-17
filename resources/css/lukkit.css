@@ -162,7 +162,7 @@ body.dark .navbar, body.dark .card, body.dark .toggle {
 }
 
 body.dark .navbar, body.dark .card, body.dark .button, body.dark .toggle {
-	background: rgba(0, 0, 0, 0.2);
+	background: #121419;
 	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
