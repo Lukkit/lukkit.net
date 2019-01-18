@@ -1,7 +1,7 @@
-if(store.get("theme") === "light") {
-	$("body").removeClass("dark");
+if(store.get("theme") === "dark") {
+	$("body").addClass("dark");
 } else {
-	store.set("theme", "dark");
+	store.set("theme", "light");
 }
 
 $(document).ready(function( ) {
