@@ -1,8 +1,5 @@
-if(store.get("theme") === "dark") {
-	$("body").addClass("dark");
-} else {
-	store.set("theme", "light");
-}
+if(store.get("theme") === "dark") $("body").addClass("dark");
+else store.set("theme", "light");
 
 $(document).ready(function( ) {
 	$(".toggle").click(function( ) {
