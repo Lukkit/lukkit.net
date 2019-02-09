@@ -9,6 +9,10 @@
 	font-weight: 300;
 }
 
+.toggle i {
+	margin-right: 8px;
+}
+
 body {
 	background: #F5F7F9;
 	font-family: "Roboto", sans-serif;
@@ -42,11 +46,12 @@ body {
 
 .card {
 	color: #242A31;
-	border: 1px solid #E6ECF1;
+	border: 1px solid #D3DCE4;
 	box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
 	border-radius: 3px;
-	transition: border 250ms ease;
+	transition: border 250ms ease-out;
 	margin-bottom: 5vh;
+	min-height: calc(100% - 5vh);
 }
 
 .card:hover, body.dark .card:hover {
@@ -90,6 +95,7 @@ body {
 	width: 200px;
 	text-align: left;
 	display: inline-block;
+	transition: all 250ms ease-out;
 }
 
 .button i {
@@ -114,7 +120,7 @@ a:hover {
 	font-size: 16px;
 	line-height: 1em;
 	font-weight: 500;
-	transition: color 250ms ease;
+	transition: color 250ms ease-out;
 }
 
 .card p.card-text {
@@ -125,24 +131,25 @@ a:hover {
 }
 
 .toggle {
-	margin: 5vh 0 10vh;
 	color: #242A31;
-	border: 1px solid #E6ECF1;
-	box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+	border: 1px solid #D3DCE4;
+	cursor: pointer;
+	padding: 0 16px;
+	border-radius: 3px;
 	background: white;
-	border-radius: 40px;
-	height: 40px;
-	width: 40px;
-	padding: 8px;
-	font-size: 16px;
 	display: inline-block;
-	transition: all 250ms ease;
+	box-shadow: 0 1px 1px 0 rgba(116, 129, 141, 0.1);
+	transition: all 250ms ease-out;
+	font-weight: 500;
+	line-height: 30px;
+	font-size: 14px;
+	height: 30px;
+	margin-bottom: 5vh;
 }
 
 .toggle:hover, body.dark .toggle:hover {
-	border-color: rgb(56, 132, 255);
 	color: rgb(56, 132, 255);
-	cursor: pointer;
+	border-color: rgb(56, 132, 255);
 }
 
 body.dark {
